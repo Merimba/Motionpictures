@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+body{
+    width: 100%;
+    position: relative;
+}
+header{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:darkred;
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+  font-size:1.5rem ;
+  color: antiquewhite;
+}
+nav{
+    margin: 22px 0 10px;
+    padding: 12px 0 10px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav li{
+    margin: 10px;
+    padding: 5px;
+
+}
+nav a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 0.5s ease;
+ 
+}
+nav a:hover{
+    
+    color: #000;
+
+}
+nav input{
+    text-align: center;
+    background-color: transparent;
+    border-radius: 50px;
+    color: antiquewhite;
+    margin: 10px;
+    width: 35%;
+    font-size: 17px;
+    padding: 5px;
+}
+nav input::placeholder{
+    color: aliceblue;
+}
+
+main{
+    
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+ 
+    justify-content: center;
+}
+
+#Movies{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid darkred;
+    margin: 10px;
+    
+}
+
+#Movies h1{
+    color: black;
+    font-size: 2rem;
+
+}
+.container{
+    margin: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.container div{
+    width: 21%;
+    height: 50vh;
+    margin: 21px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container div  img{
+    width: 98%;
+    height: 30vh;
+    border-radius: 10px;
+
+}
+/*slider*/
+.slider {
+    width: 100%;
+    margin:20px auto;
+}
+.slider2 {
+    width: 100%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+.slider div{
+ 
+}
+.slider div img{
+    height: 90%;
+}
+.slider div p{
+    color: rgb(62, 61, 62);
+   height: 8%;
+    font-size: large;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px;
+}
+
+.homeDiv{
+position: relative;
+}
+.homeDiv .slick-dots{
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin: 0;
+padding: 1rem 0;
+list-style-type: none;
+position: absolute;
+bottom: 22px;
+right: 39%;
+}
+.homeDiv .slick-dots li{
+margin: 0 0.6rem;
+}
+.homeDiv .slick-dots button{
+/* display:flex; */
+width: .7rem;
+height: 0.7rem;
+padding: 0;
+border: none;
+background-color: #444141;
+text-indent: -9999px;
+border-radius: 100%;
+transition: all 0.9s ease;
+}
+.homeDiv .slick-dots li.slick-active button{
+transform: scale(2.2);
+box-shadow: rgba(0, 0, 0, 0.905);
+background-color: darkred;
+
+}
+.prev2 i {
+position: absolute;
+top: 53%;
+left: 20px;
+transform: translateY(-50%);
+height: 36px;
+width: 36px;
+background-color: darkred;
+border-radius: 50%;
+text-align: center;
+line-height: 36px;
+color: antiquewhite;
+font-size: 15px;
+transition: all 0.3s linear;
+z-index: 100;
+cursor: pointer;
+transition: 0.6s ease;
+}
+.prev2 i:active {
+transform: scale(1.94) translateY(-50%);
+}
+.next2 i {
+position: absolute;
+top: 53%;
+right: 20px;
+transform: translateY(-50%);
+height: 36px;
+width: 36px;
+background-color: darkred;
+border-radius: 50%;
+text-align: center;
+line-height: 36px;
+color: antiquewhite;
+font-size: 15px;
+transition: all 0.3s linear;
+z-index: 100;
+cursor: pointer;
+transition: 0.6s ease;
+}
+.next2 i:active {
+transform: scale(1.94) translateY(-50%);
+}
+.homeDiv .slider-btn2 .prev2,
+.homeDiv .slider-btn2 .next2{
+opacity: 0;
+transition: opacity 1s ease;
+}
+.homeDiv:hover .slider-btn2 .prev2,
+.homeDiv:hover .slider-btn2 .next2{
+opacity: 1;
+}
+/*movies*/
+#Movies span{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#Movies h1,
+#Movies a{
+    color: #444141;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+#Movies i{
+    transition: all 0.5s ease;
+}
+#seeLess{
+    display: flex;
+    display: none;
+}
+#Movies a .seeAll{
+    transform: translateX(10%);
+    
+}
+#Movies a .seeLess{
+    transform: translateX(-10%);
+    
+}
+#Movies a:hover .seeAll{
+    transform: translateX(50%);
+    color: darkred;
+}
+#Movies a:hover .seeLess{
+    transform: translateX(-50%);
+    color: darkred;
+}
+#Movies a:hover{
+    
+    color: darkred;
+}
+#Movies p{
+    color: gray;
+    font-size: 17px;
+    margin: 5px;
+}
+#Movies h5{
+    margin: 5px;
+    font-size: 1.3rem;
+}
+ 
+#Movies button{
+    color: white;
+    background-color: darkred;
+    border-radius: 50px;
+    padding: 7px 20px;
+    margin: 7px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid transparent;
+    transition: all 0.5s ease;
+}
+#Movies button:hover{
+    background-color: #000;
+}
+#seeMore{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: all 0.5s ease;
+    display: none;
+}
+#seeLess{
+    transition: all 0.5s ease;
+}
+/*theatres*/
+#theatres{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid darkred;
+    margin: 10px;
+    
+}
+
+#theatres h1{
+    
+    color: black;
+    font-size: 2rem;
+    color: #444141;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+#theatres p{
+    text-align: center;
+    color: rgb(169, 22, 22);
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+.theatres{
+    margin: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.theatres div{
+    width: 21%;
+   
+    margin: 21px;
+    padding: 10px;
+    display: flex;
+    flex-direction:column;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #00000097;
+    box-shadow: 0 13px 17px rgba(0, 0, 0, 0.605);
+    transition: all 0.6s ease;
+}
+.theatres div  span{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+
+}
+.theatres div  h3{
+   font-size: 1.5rem;
+
+}
+.theatres div  img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+}
+.theatres div:hover{
+    background-color: #000;
+    cursor: pointer;
+    color: antiquewhite;
+}
+/*about*/
+#about{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid darkred;
+    margin: 10px;
+    
+}
+
+#about h1{
+    
+    color: black;
+    font-size: 2rem;
+    color: #444141;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+#about p{
+    text-align: center;
+    color: rgb(18, 18, 18);
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+#about div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#about span{
+    text-align: center;
+    color: rgb(18, 18, 18);
+    font-size: 1rem;
+    font-weight: 300;
+    width: 80%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+/*footer*/
+footer{
+    width: 100%;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer div{
+    margin: 20px;
+    padding: 20px;
+}
+footer ul{
+    margin: 20px;
+}
+footer li{
+    list-style: none;
+}
+footer li a{
+    text-decoration: none;
+    color: white;
+   
+    padding: 17px 0;
+    transition: all 0.3s ease;
+}
+footer li a:hover{
+    color: darkred;
+}
+footer div h4{
+    margin: 5px;
+}
+footer div h5{
+    margin: 5px;
+}

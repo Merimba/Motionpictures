@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Motion Picture</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--The styling links-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"> <!--icon-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+
+  </style>
+  
+  <body>
+  
+    <header>
+      <div class="logo">
+        <h2>Motion Picture</h2>
+        
+      </div>
+      <!--This is a landing page website.-->
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#movies">Movies</a></li>
+          <li><a href="#Theatres">Theatres</a></li>
+          <li><a href="#About">About</a></li>
+          <input type="search" placeholder="search...">
+        </ul>
+      </nav>
+    </header>
+<!--Entails details about the home page-->
+    <section id="home">          
+      <div class="homeDiv">
+        <section class="center slider">
+          
+            <div>
+                
+              <img src="./images/IMG-20230329-WA0001.jpg" alt="">
+              <p>The Last Of Us</p>
+             
+              
+            </div>
+            
+            <div>
+              <img src="./images/IMG-20230329-WA0002.jpg" alt="">
+              <p>John Wick</p>
+            </div>
+            <div>
+              <img src="./images/IMG-20230329-WA0003.jpg" alt="">
+              <p>Breaking Bad</p>
+            </div>
+            <div>   
+              <img src="./images/IMG-20230329-WA0001.jpg" alt="">
+              <p>The Last Of Us</p>
+            
+            </div>
+            <div>
+              <img src="./images/IMG-20230329-WA0004.jpg" alt="">
+              <p>Creed III</p>
+            </div>
+            <div>
+              <img src="./images/IMG-20230329-WA0005.jpg" alt="">
+              <p>Avatar: Way of Water</p>
+            </div>
+            <div>
+              <img src="./images/IMG-20230329-WA0001.jpg" alt="">
+              <p>The Last Of Us</p>
+            </div>
+            <div>
+              <img src="./images/IMG-20230329-WA0006.jpg" alt="">
+              <p>365</p>
+            </div>
+            <div>
+              <img src="./images/IMG-20230329-WA0007.jpg" alt="">
+              <p>Puss in Boots</p>
+            </div>
+          
+          </section>
+        
+        <div class="slider-btn2">
+            <span class="prev2 position-top"><i class="fas fa-chevron-left"></i></span>
+            <span class="next2 position-top right-0"><i class="fas fa-chevron-right"></i></span>
+    
+        </div>
+      </div>
+
+<main>
+    
+    <div id="movies"></div>
+    <section id="Movies">
+        <span> <h1>Now showing</h1> <a type="button" id="seeAll"  onclick="seeMore()">See All <i class="fa fa-arrow-right  seeAll"></i></a><a type="button" id="seeLess"  onclick="seeLess()"><i class="fa fa-arrow-left seeLess"> </i> See Less</a></span>
+        <div class="container">
+              <!--This part of code gives delves further into the movies-->
+                <div class="col">
+                    <img src="./images/IMG-20230329-WA0001.jpg" alt="">
+                    <p>Action | Science Fiction | Thriller</p>
+                    <h5>The Last of Us</h5>
+                    <span class="spanBtn"><button>Buy Ticket</button></span>
+                </div>
+
+                <div class="col">
+                    <img src="./images/IMG-20230329-WA0002.jpg" alt="">
+                    <p>Action | Crime | Thriller</p>
+                    <h5>John Wick: Chapter 4</h5>
+                    <span class="spanBtn"><button>Buy Ticket</button></span>
+                </div>
+                <div class="col">
+                    <img src="./images/IMG-20230329-WA0004.jpg" alt="">
+                    <p>Action | Drama | Thriller</p>
+                    <h5>Creed III</h5>
+                    <span class="spanBtn"><button>Buy Ticket</button></span>
+                </div>
+                <div class="col">
+                  <img src="./images/IMG-20230329-WA0002.jpg" alt="">
+                  <p>Action | Crime | Thriller</p>
+                  <h5>John Wick: Chapter 4</h5>
+                  <span class="spanBtn"><button>Buy Ticket</button></span>
+              </div>
+              <main id="seeMore">
+                <div class="col">
+                  <img src="./images/IMG-20230329-WA0001.jpg" alt="">
+                  <p>Action | Science Fiction | Thriller</p>
+                  <h5>The Last of Us</h5>
+                  <span class="spanBtn"><button>Buy Ticket</button></span>
+              </div>
+
+              <div class="col">
+                  <img src="./images/IMG-20230329-WA0002.jpg" alt="">
+                  <p>Action | Crime | Thriller</p>
+                  <h5>John Wick: Chapter 4</h5>
+                  <span class="spanBtn"><button>Buy Ticket</button></span>
+              </div>
+              <div class="col">
+                  <img src="./images/IMG-20230329-WA0004.jpg" alt="">
+                  <p>Action | Drama | Thriller</p>
+                  <h5>Creed III</h5>
+                  <span class="spanBtn"><button>Buy Ticket</button></span>
+              </div>
+              <div class="col">
+                <img src="./images/IMG-20230329-WA0002.jpg" alt="">
+                <p>Action | Crime | Thriller</p>
+                <h5>John Wick: Chapter 4</h5>
+                <span class="spanBtn"><button>Buy Ticket</button></span>
+            </div>
+            <div class="col">
+              <img src="./images/IMG-20230329-WA0001.jpg" alt="">
+              <p>Action | Science Fiction | Thriller</p>
+              <h5>The Last of Us</h5>
+              <span class="spanBtn"><button>Buy Ticket</button></span>
+          </div>
+
+          <div class="col">
+              <img src="./images/IMG-20230329-WA0002.jpg" alt="">
+              <p>Action | Crime | Thriller</p>
+              <h5>John Wick: Chapter 4</h5>
+              <span class="spanBtn"><button>Buy Ticket</button></span>
+          </div>
+          <div class="col">
+              <img src="./images/IMG-20230329-WA0004.jpg" alt="">
+              <p>Action | Drama | Thriller</p>
+              <h5>Creed III</h5>
+              <span class="spanBtn"><button>Buy Ticket</button></span>
+          </div>
+          <div class="col">
+            <img src="./images/IMG-20230329-WA0002.jpg" alt="">
+            <p>Action | Crime | Thriller</p>
+            <h5>John Wick: Chapter 4</h5>
+            <span class="spanBtn"><button>Buy Ticket</button></span>
+        </div>
+        <div class="col">
+          <img src="./images/IMG-20230329-WA0001.jpg" alt="">
+          <p>Action | Science Fiction | Thriller</p>
+          <h5>The Last of Us</h5>
+          <span class="spanBtn"><button>Buy Ticket</button></span>
+      </div>
+
+      <div class="col">
+          <img src="./images/IMG-20230329-WA0002.jpg" alt="">
+          <p>Action | Crime | Thriller</p>
+          <h5>John Wick: Chapter 4</h5>
+          <span class="spanBtn"><button>Buy Ticket</button></span>
+      </div>
+      <div class="col">
+          <img src="./images/IMG-20230329-WA0004.jpg" alt="">
+          <p>Action | Drama | Thriller</p>
+          <h5>Creed III</h5>
+          <span class="spanBtn"><button>Buy Ticket</button></span>
+      </div>
+      <div class="col">
+        <img src="./images/IMG-20230329-WA0002.jpg" alt="">
+        <p>Action | Crime | Thriller</p>
+        <h5>John Wick: Chapter 4</h5>
+       <span class="spanBtn"><button>Buy Ticket</button></span>
+    </div>
+      </main>
+              
+        </div>
+ 
+       </section>
+       <div id="Theatres">
+
+       </div>
+     <section id="theatres">
+       <h1>Theatres</h1>
+       <p>Here are some of our partner theaters:</p>
+       <div class="theatres">
+         <div class="theatres-1">
+           <span><img src="./images/centuryImax.jpeg" alt=""></span>
+           <h3>Century Imax</h3>
+           
+           <p><i class="fas fa-map-marker-alt"></i> Garden City,Thika Road </p>
+         </div>
+         <div class="theatres-1">
+          <span><img src="./images/Centurycinemax.jpeg" alt=""></span>
+          <h3>Century Cinemax Junction</h3>
+          
+          <p><i class="fas fa-map-marker-alt"></i> Junction Mall,Ngong Road </p>
+        </div>
+        <div class="theatres-1">
+         <span> <img src="./images/a3907a3fafa2100e24e5d71692b0bbda.jpeg" alt=""></span>
+          <h3>Century Cinemax Sarit</h3>
+          
+          <p><i class="fas fa-map-marker-alt"></i> Sarit,Westlands </p>
+        </div>
+        <div class="theatres-1">
+          <span><img src="./images/centuryCinemaxTworivers.png" alt=""></span>
+          <h3>Century Cinemax Two Rivers</h3>
+          
+          <p><i class="fas fa-map-marker-alt"></i> Two Rivers,Limuru Road </p>
+        </div>
+         
+       </div>
+     </section>
+     <div id="About"></div>
+     <section id="about">
+       <h1>About Us</h1>
+       <p>Learn more about Motion Picture:</p>
+       <!-- Add HTML code for the About Us section here -->
+      <div>
+        <span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur neque perferendis cupiditate! Aliquam corrupti atque tempora aspernatur fuga fugit, repudiandae voluptas provident reiciendis velit harum, veniam reprehenderit. Porro, iste?
+         </span>
+      </div>
+     </section>
+</main>
+
+    <footer>
+      <!-- Add HTML code for the footer here -->
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#movies">Movies</a></li>
+          <li><a href="#Theatres">Theatres</a></li>
+          <li><a href="#About">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Motion Picture</h4>
+        <h5>25 Parklands Road</h5>
+        <h5>Sales: 0733 620998</h5>
+      </div>
+      <div>
+        <h4>Motion Picture</h4>
+        <h4>Customer Care:</h4>
+        <h5>0103 132337</h5>
+        <h5>0791 478090</h5>
+      </div>
+      <div>
+        <h4>Motion Picture is a Nation Media Group Company. <br>
+          &copy 2021 Motion Picture. All rights reserved.</h4>
+        <h5>Terms & Conditions</h5>
+        <h5>Security</h5>
+        <h5>Contact Us</h5>
+      </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" t ype="text/javascript"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+
+<script src="./js/main.js"></script>
+
+    
+  </body>
+</html>
